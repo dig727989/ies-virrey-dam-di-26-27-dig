@@ -201,3 +201,20 @@ Concepts you must use:
  * - Create functions with return values to calculate the different amounts.
  * - Call everything from main.
  */
+fun calculartor3000(product:String, price: Double, quantity:Int){
+ var discount: Double = 10.0
+ var tax: Double = 7.0
+
+ var subtotal = price * quantity
+ var disAmount = price-(price *(discount/100))
+
+ var priceAferDis = price + disAmount
+ var priceTax = price*(tax/100)
+ var total = priceAferDis + priceTax
+
+ println("El $product tiene un precio de: $price y con la cantidad de: $quantity sale un total de: $subtotal" +
+         "El precio con el descuneto es: $priceAferDis y los impuestos es: $priceTax el total es $total €")
+}
+fun main(){
+calculartor3000("portatil",99.0,2)
+}
