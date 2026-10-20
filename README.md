@@ -19,6 +19,10 @@
 - **21/09/2026**: First solution for the exercise Geometric Shapes.
 - **05/10/2026**: Module 1. Kotlin
 - **07/10/2026**: Module 2. Kotlin
+- **12/10/2026**: Module 3. Functions.
+- **14/10/2026**: Module 3. Lambdas
+- **19/10/2026**: Module 4: Null safety. 
+- **19/10/2026**: Modul3 4: Collections
 - 
 
 ## 💻 How to open the repository in IntelliJ IDEA
