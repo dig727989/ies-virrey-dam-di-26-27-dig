@@ -15,6 +15,7 @@ fun main (){
     println(d())
     println(e(6))
     //exersice3
+
     print("First number: ")
     val num1 = readln().toDouble()
 
@@ -37,11 +38,34 @@ fun main (){
     } else {
         println("Invalid operator")
     }
+    //Exersice4
+    fun main() {
+        print("Enter a sentence: ")
+        val sentence = readln()
+
+        val vowelCount = sentence.count { it.lowercaseChar() in "aeiou" }
+        println("Vowels: $vowelCount")
+
+        val spaceCount = sentence.count { it == ' ' }
+        println("Spaces: $spaceCount")
+
+        val onlyLetters = sentence.filter { it.isLetter() }
+        println("Only letters: $onlyLetters")
+
+        val hasDigits = sentence.any { it.isDigit() }
+        println("Contains digits: $hasDigits")
+
+        val allUpper = onlyLetters.isNotEmpty() && onlyLetters.all { it.isUpperCase() }
+        println("All letters uppercase: $allUpper")
+    }
+
 
 }
 fun calculateTwo(a:Int,b:Int, operation:(Int, Int)->Int):Int{
     return operation(a,b)
 }
+//Exersice4
+
 //Exersice3
 fun calculate(a: Double, b: Double, operation: (Double, Double) -> Double): Double {
     return operation(a, b)
